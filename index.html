@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Imran Builders</title>
+<meta name="description" content="Imran Builders - construction and real estate. Homes, plots and renovation, built with care.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap">
+<style>
+:root{
+  --cream:#F6EEDD;
+  --cream-2:#EFE3CB;
+  --sand:#E8D9BC;
+  --line:#CDB894;
+  --ink:#2B1A10;
+  --muted:#4A3628;
+  --soft:#6B5646;
+  --orange:#B5400A;
+  --orange-deep:#8F3207;
+  --orange-light:#F08A4B;
+  --gutter:clamp(16px,5vw,72px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Roboto',system-ui,sans-serif}
+h1,h2,h3{font-family:'Poppins',sans-serif;margin:0}
+p{margin:0}
+a{color:var(--orange)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wrap{max-width:1360px;margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-family:'Poppins',sans-serif;font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--orange)}
+.hl{color:var(--orange)}
+
+/* nav */
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;padding-block:20px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink)}
+.logo-text{display:flex;flex-direction:column;line-height:1.1}
+.logo-name{font-family:'Poppins',sans-serif;font-weight:700;font-size:22px;letter-spacing:-.01em}
+.logo-sub{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--soft)}
+.links{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-family:'Poppins',sans-serif;font-size:15px;font-weight:500}
+.links a.nl{color:var(--ink);text-decoration:none;padding:10px 0}
+.links a.nl:hover{color:var(--orange)}
+
+/* buttons */
+.btn{display:inline-block;background:var(--orange);color:var(--cream);text-decoration:none;padding:15px 28px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;transition:background .2s}
+.btn:hover{background:var(--orange-deep);color:var(--cream)}
+.btn-line{display:inline-block;border:2px solid var(--ink);color:var(--ink);text-decoration:none;padding:13px 26px;border-radius:999px;font-family:'Poppins',sans-serif;font-weight:600;font-size:16px;transition:background .2s,color .2s}
+.btn-line:hover{background:var(--ink);color:var(--cream)}
+
+/* hero */
+.hero{display:flex;flex-wrap:wrap;align-items:center;gap:40px;padding-block:32px 72px}
+.hero-text{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:28px}
+.hero h1{font-weight:600;font-size:clamp(40px,6vw,76px);line-height:1.04;letter-spacing:-.03em;text-wrap:balance}
+.lead{font-size:19px;line-height:1.6;font-weight:300;color:var(--muted);max-width:52ch}
+.row{display:flex;flex-wrap:wrap;gap:14px}
+.hero-art{flex:1 1 460px;min-width:0;position:relative}
+.art{display:block;width:100%;height:auto;border-radius:28px;background:var(--sand)}
+.chips{position:absolute;left:16px;bottom:16px;display:flex;flex-wrap:wrap;gap:10px}
+.chip{border-radius:16px;padding:12px 18px;display:flex;flex-direction:column;box-shadow:0 6px 20px rgba(43,26,16,.18)}
+.chip b{font-family:'Poppins',sans-serif;font-weight:700;font-size:26px;line-height:1.1}
+.chip span{font-size:12px}
+.chip.light{background:var(--cream)}.chip.light b{color:var(--orange)}.chip.light span{color:var(--muted)}
+.chip.solid{background:var(--orange)}.chip.solid b,.chip.solid span{color:var(--cream)}
+
+/* statement */
+.band{background:var(--cream-2);padding-block:88px}
+.statement{max-width:960px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:24px;text-align:center}
+.statement .big{font-family:'Poppins',sans-serif;font-weight:500;font-size:clamp(24px,3.4vw,40px);line-height:1.3;letter-spacing:-.02em;text-wrap:balance}
+.statement .sub{font-size:17px;line-height:1.7;font-weight:300;color:var(--muted);max-width:60ch}
+
+/* faq */
+.split{display:flex;flex-wrap:wrap;align-items:center;gap:56px;padding-block:88px}
+.split-img{flex:1 1 380px;min-width:0;display:flex;flex-direction:column;gap:14px}
+.split-img .art{border-radius:36px}
+.caption{font-size:13px;color:var(--soft);letter-spacing:.04em}
+.faq{flex:1 1 380px;min-width:0}
+.faq h2{font-weight:600;font-size:clamp(28px,3.4vw,42px);line-height:1.12;letter-spacing:-.02em;margin-bottom:24px}
+details{border-top:1px solid var(--line)}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 0;font-family:'Poppins',sans-serif;font-weight:500;font-size:18px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:'+';font-size:26px;line-height:1;color:var(--orange);font-weight:400;flex:none}
+details[open] summary::after{content:'\2212'}
+details p{padding-bottom:20px;font-size:16px;line-height:1.7;font-weight:300;color:var(--muted);max-width:56ch}
+
+/* services */
+.services-head{display:flex;flex-direction:column;gap:14px;max-width:760px;margin-bottom:48px}
+.services-head h2,.projects-head h2{font-weight:600;font-size:clamp(28px,3.6vw,46px);line-height:1.12;letter-spacing:-.02em;text-wrap:balance}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:20px}
+.card{background:var(--cream);border-radius:24px;padding:32px 28px;display:flex;flex-direction:column;gap:14px;min-width:0}
+.card h3{font-weight:600;font-size:22px;line-height:1.2}
+.card p{font-size:16px;line-height:1.65;font-weight:300;color:var(--muted)}
+.card .tag{font-family:'Poppins',sans-serif;font-weight:700;font-size:15px;color:var(--orange);letter-spacing:.08em}
+
+/* projects */
+.projects{padding-block:88px}
+.projects-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:48px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
+.proj{display:flex;flex-direction:column;gap:14px;min-width:0}
+.proj .art{border-radius:24px}
+.proj-meta{display:flex;justify-content:space-between;gap:12px;align-items:baseline}
+.proj-meta strong{font-family:'Poppins',sans-serif;font-weight:600;font-size:19px}
+.proj-meta span{font-size:14px;color:var(--soft)}
+
+/* contact */
+.contact{background:var(--ink);color:var(--cream);padding-block:88px 40px}
+.contact-top{display:flex;flex-wrap:wrap;gap:56px;align-items:flex-start;justify-content:space-between;margin-bottom:64px}
+.contact-left{flex:1 1 420px;min-width:0;display:flex;flex-direction:column;gap:24px}
+.contact h2{font-weight:600;font-size:clamp(30px,4.2vw,56px);line-height:1.08;letter-spacing:-.025em;text-wrap:balance}
+.contact h2 em{font-style:normal;color:var(--orange-light)}
+.contact .lead{color:#E6D8BF;font-size:18px}
+.details{flex:1 1 340px;min-width:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:28px}
+.detail{display:flex;flex-direction:column;gap:6px;font-size:16px;line-height:1.6}
+.detail .k{font-family:'Poppins',sans-serif;font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--orange-light)}
+.foot{border-top:1px solid #5A4232;padding-top:24px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-size:14px;color:#CDBBA0}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.btn-line{transition:none}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="wrap nav">
+  <a href="#top" class="logo">
+    <svg width="44" height="44" viewBox="0 0 44 44" role="img" aria-label="Imran Builders logo"><rect width="44" height="44" rx="10" fill="#B5400A"/><path d="M10 34V20l12-9 12 9v14" fill="none" stroke="#F6EEDD" stroke-width="3" stroke-linejoin="round"/><path d="M17 34V24h10v10" fill="none" stroke="#F6EEDD" stroke-width="3" stroke-linejoin="round"/></svg>
+    <span class="logo-text"><span class="logo-name">Imran Builders</span><span class="logo-sub">Construction &amp; Real Estate</span></span>
+  </a>
+  <nav class="links" aria-label="Main">
+    <a class="nl" href="#about">About</a>
+    <a class="nl" href="#services">Services</a>
+    <a class="nl" href="#projects">Projects</a>
+    <a class="nl" href="#contact">Contact</a>
+    <a class="btn" href="#contact" style="padding:13px 24px;font-size:15px">Get a quote</a>
+  </nav>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="wrap hero">
+  <div class="hero-text">
+    <span class="eyebrow">Imran Builders &middot; [City, State]</span>
+    <h1>Where <span class="hl">vision</span> meets <span class="hl">structure</span></h1>
+    <p class="lead">We design, build and sell homes and plots people are proud to live in. Honest pricing, clean workmanship, and a handover that arrives on the day we promised.</p>
+    <div class="row">
+      <a class="btn" href="#projects">View projects</a>
+      <a class="btn-line" href="#contact">Talk to us</a>
+    </div>
+  </div>
+  <div class="hero-art">
+    <svg class="art" viewBox="0 0 600 440" role="img" aria-label="Illustration of a modern two-storey villa with a glass facade">
+      <rect width="600" height="440" fill="#E8D9BC"/>
+      <circle cx="500" cy="84" r="34" fill="#F6EEDD"/>
+      <rect y="360" width="600" height="80" fill="#CDB894"/>
+      <rect x="36" y="96" width="56" height="264" fill="#2B1A10"/>
+      <rect x="46" y="116" width="4" height="224" fill="#6B5646"/><rect x="62" y="116" width="4" height="224" fill="#6B5646"/><rect x="78" y="116" width="4" height="224" fill="#6B5646"/>
+      <rect x="60" y="226" width="500" height="14" rx="7" fill="#B5400A"/>
+      <rect x="76" y="240" width="468" height="120" fill="#FBF6EA"/>
+      <rect x="100" y="258" width="300" height="84" fill="#3A2A20"/>
+      <rect x="150" y="258" width="3" height="84" fill="#8A735F"/><rect x="200" y="258" width="3" height="84" fill="#8A735F"/><rect x="250" y="258" width="3" height="84" fill="#8A735F"/><rect x="300" y="258" width="3" height="84" fill="#8A735F"/><rect x="350" y="258" width="3" height="84" fill="#8A735F"/>
+      <rect x="430" y="258" width="88" height="102" fill="#B5400A"/>
+      <rect x="478" y="296" width="6" height="30" rx="3" fill="#F6EEDD"/>
+      <rect x="150" y="144" width="360" height="82" fill="#FBF6EA"/>
+      <rect x="176" y="164" width="196" height="46" fill="#3A2A20"/>
+      <rect x="224" y="164" width="3" height="46" fill="#8A735F"/><rect x="272" y="164" width="3" height="46" fill="#8A735F"/><rect x="320" y="164" width="3" height="46" fill="#8A735F"/>
+      <rect x="400" y="164" width="86" height="46" fill="#E8D9BC"/>
+      <rect x="130" y="132" width="400" height="14" rx="7" fill="#2B1A10"/>
+      <rect x="540" y="300" width="10" height="60" fill="#6B5646"/><circle cx="545" cy="290" r="26" fill="#8A735F"/>
+    </svg>
+    <div class="chips">
+      <div class="chip light"><b>[00]+</b><span>Projects delivered</span></div>
+      <div class="chip solid"><b>[00]%</b><span>Clients who refer us</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATEMENT -->
+<section id="about" class="band">
+  <div class="wrap">
+    <div class="statement">
+      <svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3 33 33H3z" fill="#B5400A"/></svg>
+      <p class="big">We believe a good home starts with the right questions &mdash; <span class="hl">about your family, your budget, and the way you want to live every day.</span></p>
+      <p class="sub">Imran Builders is a local construction and real estate company. We handle land, design, construction and sale under one roof, so you deal with one team from the first site visit to the day you get your keys.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="wrap split">
+  <div class="split-img">
+    <svg class="art" viewBox="0 0 520 480" role="img" aria-label="Illustration of an office building with a curved glass entrance">
+      <rect width="520" height="480" fill="#E8D9BC"/>
+      <rect y="400" width="520" height="80" fill="#CDB894"/>
+      <rect x="60" y="70" width="70" height="330" fill="#2B1A10"/>
+      <rect x="72" y="90" width="4" height="290" fill="#6B5646"/><rect x="92" y="90" width="4" height="290" fill="#6B5646"/><rect x="112" y="90" width="4" height="290" fill="#6B5646"/>
+      <rect x="130" y="130" width="240" height="270" fill="#FBF6EA"/>
+      <rect x="150" y="150" width="200" height="50" fill="#3A2A20"/><rect x="150" y="214" width="200" height="50" fill="#3A2A20"/>
+      <rect x="200" y="150" width="3" height="114" fill="#8A735F"/><rect x="250" y="150" width="3" height="114" fill="#8A735F"/><rect x="300" y="150" width="3" height="114" fill="#8A735F"/>
+      <path d="M110 400V300q0-40 60-40h300q30 0 30 40v100z" fill="#FBF6EA"/>
+      <rect x="150" y="296" width="290" height="80" rx="10" fill="#3A2A20"/>
+      <rect x="296" y="296" width="3" height="80" fill="#8A735F"/>
+      <rect x="100" y="250" width="400" height="14" rx="7" fill="#B5400A"/>
+    </svg>
+    <span class="caption">[Project name] &middot; [Location]</span>
+  </div>
+  <div class="faq">
+    <h2>What makes <span class="hl">Imran Builders</span> different?</h2>
+    <details name="faq" open><summary>Why Imran Builders?</summary><p>We buy the land, design the home, build it and sell it ourselves. One team stays accountable from the first drawing to the day you get your keys.</p></details>
+    <details name="faq"><summary>How do you choose materials?</summary><p>We pick for the climate and the budget, and we show you the options with their prices before anything is ordered. No substitutions without your written approval.</p></details>
+    <details name="faq"><summary>What is your building philosophy?</summary><p>Simple plans, strong structure, good light and ventilation. We would rather build a smaller home well than a bigger one badly.</p></details>
+    <details name="faq"><summary>How do you measure success?</summary><p>On-time handover, no hidden costs, and clients who call us again when a relative needs a house. Those three matter more to us than anything else.</p></details>
+    <details name="faq"><summary>What inspires our work?</summary><p>The streets we grew up in, and the families who live in what we build. Every plan starts with how people will actually use the rooms.</p></details>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="band">
+  <div class="wrap">
+    <div class="services-head">
+      <span class="eyebrow">What we do</span>
+      <h2>We shape the way people <span class="hl">live, move and settle</span> in a space</h2>
+    </div>
+    <div class="cards">
+      <article class="card"><span class="tag">01</span><h3>Residential construction</h3><p>Independent houses and villas, built to your plan or ours, with fixed-scope estimates.</p></article>
+      <article class="card"><span class="tag">02</span><h3>Plots and land</h3><p>Clear-title plots in planned layouts, with roads, drainage and utilities arranged before you buy.</p></article>
+      <article class="card"><span class="tag">03</span><h3>Interiors and finishing</h3><p>Flooring, woodwork, electricals and paint done by the same crew that built the structure.</p></article>
+      <article class="card"><span class="tag">04</span><h3>Renovation and extension</h3><p>Add a floor, rework a kitchen or repair an older home without starting over.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="wrap projects">
+  <div class="projects-head">
+    <h2>Recent <span class="hl">projects</span></h2>
+    <a class="btn-line" href="#contact" style="padding:12px 26px;font-size:15px">Ask for the full portfolio</a>
+  </div>
+  <div class="grid3">
+    <article class="proj">
+      <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Illustration of a villa project"><rect width="400" height="300" fill="#E8D9BC"/><rect y="250" width="400" height="50" fill="#CDB894"/><rect x="50" y="130" width="300" height="120" fill="#FBF6EA"/><rect x="70" y="150" width="190" height="70" fill="#3A2A20"/><rect x="280" y="150" width="50" height="100" fill="#B5400A"/><rect x="90" y="80" width="200" height="50" fill="#FBF6EA"/><rect x="108" y="94" width="110" height="26" fill="#3A2A20"/><rect x="40" y="120" width="320" height="12" rx="6" fill="#2B1A10"/></svg>
+      <div class="proj-meta"><strong>[Villa project name]</strong><span>[Location]</span></div>
+    </article>
+    <article class="proj">
+      <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Illustration of an apartment block project"><rect width="400" height="300" fill="#2B1A10"/><rect y="250" width="400" height="50" fill="#1C1008"/><rect x="90" y="50" width="220" height="200" fill="#EFE3CB"/><g fill="#3A2A20"><rect x="108" y="68" width="40" height="30"/><rect x="180" y="68" width="40" height="30"/><rect x="252" y="68" width="40" height="30"/><rect x="108" y="116" width="40" height="30"/><rect x="180" y="116" width="40" height="30"/><rect x="252" y="116" width="40" height="30"/><rect x="108" y="164" width="40" height="30"/><rect x="180" y="164" width="40" height="30"/><rect x="252" y="164" width="40" height="30"/></g><rect x="180" y="206" width="40" height="44" fill="#B5400A"/><rect x="80" y="42" width="240" height="10" fill="#B5400A"/></svg>
+      <div class="proj-meta"><strong>[Apartment project name]</strong><span>[Location]</span></div>
+    </article>
+    <article class="proj">
+      <svg class="art" viewBox="0 0 400 300" role="img" aria-label="Illustration of a plotted layout project"><rect width="400" height="300" fill="#B5400A"/><g fill="none" stroke="#F6EEDD" stroke-width="3"><rect x="40" y="40" width="100" height="90"/><rect x="150" y="40" width="100" height="90"/><rect x="260" y="40" width="100" height="90"/><rect x="40" y="170" width="100" height="90"/><rect x="150" y="170" width="100" height="90"/><rect x="260" y="170" width="100" height="90"/></g><rect x="30" y="140" width="340" height="20" fill="#F6EEDD"/><rect x="150" y="40" width="100" height="90" fill="#F6EEDD" opacity="0.35"/></svg>
+      <div class="proj-meta"><strong>[Plotted layout name]</strong><span>[Location]</span></div>
+    </article>
+  </div>
+</section>
+</main>
+
+<!-- CONTACT -->
+<footer id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-top">
+      <div class="contact-left">
+        <h2>Planning to build or buy? <em>Let&rsquo;s talk.</em></h2>
+        <p class="lead">Tell us about your plot, budget and timeline. We will visit the site and send a clear, itemised estimate.</p>
+        <div><a class="btn" href="#contact">Book a site visit</a></div>
+      </div>
+      <div class="details">
+        <div class="detail"><span class="k">Office</span><span>Imran Builders<br>[Street address]<br>[City, State, PIN]</span></div>
+        <div class="detail"><span class="k">Phone</span><span>[+91 00000 00000]</span></div>
+        <div class="detail"><span class="k">Email</span><span>[name@imranbuilders.com]</span></div>
+        <div class="detail"><span class="k">Hours</span><span>[Mon&ndash;Sat, 00:00&ndash;00:00]</span></div>
+      </div>
+    </div>
+    <div class="foot">
+      <span>&copy; Imran Builders. All rights reserved.</span>
+      <span>Reg. no. [Registration number]</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
